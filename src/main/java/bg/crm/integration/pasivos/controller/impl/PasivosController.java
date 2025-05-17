@@ -36,7 +36,7 @@ public class PasivosController implements IPasivosController {
             return new ResponseEntity<>(pasivos, HttpStatus.OK);
         } catch (Exception e) {
         	LOG.info("La consulta falló");
-            return new ResponseEntity<String>(ErrorsConfig.ERROR_INTERN, HttpStatus.INTERNAL_SERVER_ERROR);  
+            return new ResponseEntity<>(ErrorsConfig.ERROR_INTERN, HttpStatus.INTERNAL_SERVER_ERROR);  
         }
     }
 
